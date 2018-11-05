@@ -1,0 +1,115 @@
+SELECT BIAS_DESC, Count(INCIDENT_ID) as INCI_COUNT FROM hate_crime GROUP BY BIAS_DESC ORDER BY INCI_COUNT DESC;
++-------------------------------------------------------------------------------------------------+------------+
+| BIAS_DESC                                                                                       | INCI_COUNT |
++-------------------------------------------------------------------------------------------------+------------+
+| Anti-Black or African American                                                                  |      65048 |
+| Anti-Jewish                                                                                     |      24297 |
+| Anti-White                                                                                      |      21831 |
+| Anti-Gay (Male)                                                                                 |      18898 |
+| Anti-Hispanic or Latino                                                                         |      11910 |
+| Anti-Other Race/Ethnicity/Ancestry                                                              |       9556 |
+| Anti-Asian                                                                                      |       5636 |
+| Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                                       |       5489 |
+| Anti-Multiple Races, Group                                                                      |       4532 |
+| Anti-Lesbian (Female)                                                                           |       4007 |
+| Anti-Other Religion                                                                             |       3161 |
+| Anti-Islamic (Muslim)                                                                           |       3135 |
+| Anti-American Indian or Alaska Native                                                           |       1726 |
+| Anti-Catholic                                                                                   |       1350 |
+| Anti-Protestant                                                                                 |       1127 |
+| Anti-Multiple Religions, Group                                                                  |       1000 |
+| Anti-Arab                                                                                       |        902 |
+| Anti-Mental Disability                                                                          |        795 |
+| Anti-Heterosexual                                                                               |        497 |
+| Anti-Bisexual                                                                                   |        488 |
+| Anti-Physical Disability                                                                        |        452 |
+| Anti-Transgender                                                                                |        263 |
+| Anti-Atheism/Agnosticism                                                                        |        137 |
+| Anti-Gender Non-Conforming                                                                      |        114 |
+| Anti-Eastern Orthodox (Russian, Greek, Other)                                                   |         80 |
+| Anti-Female                                                                                     |         76 |
+| Anti-Other Christian                                                                            |         51 |
+| Anti-Male                                                                                       |         31 |
+| Anti-Black or African American;Anti-White                                                       |         29 |
+| Anti-Native Hawaiian or Other Pacific Islander                                                  |         19 |
+| Anti-Hindu                                                                                      |         17 |
+| Anti-Black or African American;Anti-Gay (Male)                                                  |         17 |
+| Anti-Sikh                                                                                       |         16 |
+| Anti-Mormon                                                                                     |         15 |
+| Anti-Black or African American;Anti-Jewish                                                      |         14 |
+| Anti-Gay (Male);Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                       |          7 |
+| Anti-Hispanic or Latino;Anti-White                                                              |          7 |
+| Anti-Black or African American;Anti-Hispanic or Latino                                          |          6 |
+| Anti-Asian;Anti-Black or African American                                                       |          5 |
+| Anti-Black or African American;Anti-Other Race/Ethnicity/Ancestry                               |          5 |
+| Anti-Gay (Male);Anti-White                                                                      |          5 |
+| Anti-Black or African American;Anti-Multiple Races, Group                                       |          4 |
+| Anti-Hispanic or Latino;Anti-Multiple Races, Group                                              |          4 |
+| Anti-Black or African American;Anti-Lesbian (Female)                                            |          4 |
+| Anti-Jewish;Anti-White                                                                          |          4 |
+| Anti-Black or African American;Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)        |          4 |
+| Anti-American Indian or Alaska Native;Anti-Black or African American                            |          4 |
+| Anti-Gay (Male);Anti-Jewish                                                                     |          3 |
+| Anti-Jewish;Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                           |          3 |
+| Anti-Multiple Religions, Group;Anti-Other Religion                                              |          3 |
+| Anti-Lesbian (Female);Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                 |          3 |
+| Anti-Jehovah's Witness                                                                          |          3 |
+| Anti-Jewish;Anti-Other Race/Ethnicity/Ancestry                                                  |          2 |
+| Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group);Anti-White                            |          2 |
+| Anti-Jewish;Anti-Multiple Races, Group                                                          |          2 |
+| Anti-Other Race/Ethnicity/Ancestry;Anti-White                                                   |          2 |
+| Anti-Gay (Male);Anti-Lesbian (Female)                                                           |          2 |
+| Anti-Buddhist                                                                                   |          2 |
+| S                                                                                               |          2 |
+| Anti-Arab;Anti-Hispanic or Latino                                                               |          2 |
+| Anti-Asian;Anti-Other Race/Ethnicity/Ancestry                                                   |          2 |
+| Anti-American Indian or Alaska Native;Anti-Hispanic or Latino                                   |          2 |
+| Anti-Gay (Male);Anti-Other Race/Ethnicity/Ancestry                                              |          2 |
+| Anti-Multiple Races, Group;Anti-Other Race/Ethnicity/Ancestry                                   |          1 |
+| Anti-Bisexual;Anti-Heterosexual                                                                 |          1 |
+| Anti-Black or African American;Anti-Jewish;Anti-White                                           |          1 |
+| Anti-Arab;Anti-Islamic (Muslim)                                                                 |          1 |
+| Anti-Bisexual;Anti-Black or African American                                                    |          1 |
+| Anti-Asian;Anti-Female                                                                          |          1 |
+| Anti-Black or African American;Anti-Gay (Male);Anti-White                                       |          1 |
+| Anti-Heterosexual;Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                     |          1 |
+| Anti-Multiple Races, Group;Anti-Multiple Religions, Group                                       |          1 |
+| Anti-Gay (Male);Anti-Lesbian (Female);Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group) |          1 |
+| Anti-Islamic (Muslim);Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)                 |          1 |
+| Anti-Asian;Anti-Atheism/Agnosticism                                                             |          1 |
+| Anti-Jewish;Anti-Lesbian (Female);Anti-White                                                    |          1 |
+| Anti-Multiple Races, Group;Anti-Other Religion                                                  |          1 |
+| Anti-Mental Disability;Anti-Physical Disability                                                 |          1 |
+| Anti-Arab;Anti-Black or African American;Anti-Islamic (Muslim)                                  |          1 |
+| Anti-Bisexual;Anti-Gay (Male)                                                                   |          1 |
+| Anti-Black or African American;Anti-Protestant                                                  |          1 |
+| Anti-Islamic (Muslim);Anti-Other Religion                                                       |          1 |
+| Anti-Black or African American;Anti-Other Religion                                              |          1 |
+| Anti-Hispanic or Latino;Anti-Other Race/Ethnicity/Ancestry                                      |          1 |
+| Anti-Multiple Races, Group;Anti-White                                                           |          1 |
+| Anti-Asian;Anti-Gay (Male)                                                                      |          1 |
+| Anti-American Indian or Alaska Native;Anti-Islamic (Muslim)                                     |          1 |
+| Anti-Multiple Religions, Group;Anti-Protestant                                                  |          1 |
+| Anti-Hispanic or Latino;Anti-Jewish                                                             |          1 |
+| Anti-Black or African American;Anti-Islamic (Muslim)                                            |          1 |
+| Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group);Anti-Physical Disability              |          1 |
+| Anti-Female;Anti-Gay (Male)                                                                     |          1 |
+| Anti-Islamic (Muslim);Anti-Jewish                                                               |          1 |
+| Anti-Other Race/Ethnicity/Ancestry;Anti-Other Religion                                          |          1 |
+| Anti-Gay (Male);Anti-Physical Disability                                                        |          1 |
+| Anti-Jewish;Anti-Multiple Religions, Group                                                      |          1 |
+| Anti-Black or African American;Anti-Hispanic or Latino;Anti-Multiple Races, Group;Anti-White    |          1 |
+| Anti-Other Religion;Anti-Protestant                                                             |          1 |
+| Anti-Arab;Anti-Hispanic or Latino;Anti-Islamic (Muslim)                                         |          1 |
+| Anti-Islamic (Muslim);Anti-Multiple Races, Group                                                |          1 |
+| Anti-Other Religion;Anti-White                                                                  |          1 |
+| Anti-Gay (Male);Anti-Multiple Races, Group                                                      |          1 |
+| Anti-Gay (Male);Anti-Mental Disability                                                          |          1 |
+| Anti-Lesbian (Female);Anti-Other Religion                                                       |          1 |
+| Anti-Asian;Anti-Hispanic or Latino                                                              |          1 |
+| Anti-American Indian or Alaska Native;Anti-Asian                                                |          1 |
+| Anti-Arab;Anti-Multiple Races, Group                                                            |          1 |
+| Anti-Lesbian (Female);Anti-White                                                                |          1 |
+| Anti-Gay (Male);Anti-Islamic (Muslim)                                                           |          1 |
+| Anti-Gay (Male);Anti-Transgender                                                                |          1 |
++-------------------------------------------------------------------------------------------------+------------+

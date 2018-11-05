@@ -1,0 +1,15 @@
+mysqlimport \
+  --user=root \
+  --ignore-lines=1 \
+  --columns='INCIDENT_ID','INCIDENT_NO','DATA_YEAR','ORI','PUB_AGENCY_NAME','PUB_AGENCY_UNIT','AGENCY_TYPE_NAME','STATE_ABBR','STATE_NAME','DIVISION_NAME','REGION_NAME','POPULATION_GROUP_CODE','POPULATION_GROUP_DESC','INCIDENT_DATE','ADULT_VICTIM_COUNT','JUVENILE_VICTIM_COUNT','TOTAL_OFFENDER_COUNT','ADULT_OFFENDER_COUNT','JUVENILE_OFFENDER_COUNT','OFFENDER_RACE','OFFENDER_ETHNICITY','VICTIM_COUNT','OFFENSE_NAME','TOTAL_INDIVIDUAL_VICTIMS','LOCATION_NAME','BIAS_DESC','VICTIM_TYPES','MULTIPLE_OFFENSE','MULTIPLE_BIAS' \
+  --socket=/u/ejblom/a348-spr2018-workspace/mysql/mysql.sock \
+  --host=silo.cs.indiana.edu \
+  --port=45188 \
+  --password \
+  --fields-terminated-by=',' \
+  --fields-optionally-enclosed-by='"' \
+  --lines-terminated-by='\r\n' \
+  --debug \
+  hate_crimes \
+  hate_crime.csv
+

@@ -1,0 +1,6 @@
+SELECT BIAS_DESC, Count(INCIDENT_ID) as INCI_COUNT 
+FROM hate_crime 
+GROUP BY BIAS_DESC 
+ORDER BY INCI_COUNT DESCINTO OUTFILE '/groupby_bias.txt'
+
+--i have a permissions issue with this

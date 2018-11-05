@@ -1,0 +1,1 @@
+select COUNT(INCIDENT_ID) from hate_crime;
