@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+print('hello world')
+
+# this works, so this shebang works for this machine for executing python3
