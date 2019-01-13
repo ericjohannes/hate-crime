@@ -135,3 +135,87 @@ I got a group by bias desc to work, looks great
 TODO:
 get dates loaded right
 convert bias description to be a set of columns, one for each bias and true and false for each
+
+TODO
+try making dates a varchar(10) or something
+
+Worked
+hate_crimes.hate_crime: Records: 186859  Deleted: 0  Skipped: 0  Warnings: 14
+
+14 warnings might be varchar fields that overflowed lengths
+
+
+made a user 'hate_crimes' with password 'hate_crimes'
+made connect_as_hate_crimes file
+tried to grant select privileges only on hate_crimes.hate_crime
+ok it works
+select count(incident_id) from hate_crime;
+worked
+now try to make a page that does that
+
+test in datadownlow works
+test1 will do a count of records and print
+
+jan 8, 2019
+must use this shebang
+#!/usr/bin/env python3
+
+and it works as long as it's valid python 3
+i'll try that simple sql test
+
+Jan. 13
+making tables for bias_desc
+location_name
+offense_name
+victim_types
+
+in python, splitting those fields on ';' and making new tables with 
+incident id and those fields
+
+first going into sql and making new tables
+
+CREATE TABLE bias_desc (
+    INCIDENT_ID int(11),
+    BIAS_DESC varchar(100)
+);
+
+CREATE TABLE location_name (
+    INCIDENT_ID int(11),
+    LOCATION_NAME varchar(100)
+);
+
+CREATE TABLE offense_name (
+    INCIDENT_ID int(11),
+    OFFENSE_NAME varchar(120)
+);
+
+CREATE TABLE victim_types (
+    INCIDENT_ID int(11),
+    VICTIM_TYPES varchar(100)
+);
+
+created empty tables
+
+connection working with sql alchemy
+make enw hate_crimes_admin user for hate_crimes db
+grant all privileges
+
+CREATE USER 'hc_admin'@'silo.cs.indiana.edu' IDENTIFIED BY 'ThinkPadacerDELL';
+
+GRANT ALL PRIVILEGES ON hate_crimes.* TO hc_admin'@'silo.cs.indiana.edu';
+
+did those two commans
+will try new engine connecting as admin
+had problems
+did this:
+CREATE USER 'hc_admin1'@'silo.soic.indiana.edu' IDENTIFIED BY 'ThinkPadacerDELL';
+
+GRANT ALL PRIVILEGES ON hate_crimes.* TO 'hc_admin1'@'silo.soic.indiana.edu';
+
+ran python code; it worked!!!
+
+ran python for three more tables and it all worke
+so now there are victim_types, location_name and offense_name and bias_desc
+all broken out
+can link by incident ID
+
